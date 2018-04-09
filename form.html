@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   <link rel="stylesheet" type="text/css" href="css/form.css">
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <title>Principal | Sign in</title>
+  </head>
+
+  <body>
+    <form class="form-signin border border-primary p-4 rounded" action="formScript/signIn.php" method="POST">
+
+      <h3 class="text-center mb-4">Sign in</h3>
+      <div class="form-label-group">
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus name="inputEmail">
+        <label for="inputEmail">Email address</label>
+      </div>
+
+      <div class="form-label-group">
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required name="inputPassword">
+        <label for="inputPassword">Password</label>
+      </div>
+
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember" name="remember"> Remember me
+        </label>
+      </div>
+      <div class="text-right mb-3" id="not">
+        <a href="sign-up.html">Don't have an account yet ?</a>
+      </div>
+      <button class="btn btn-lg btn-outline-primary btn-block" type="submit" name="signinBtn">Sign in</button>
+      <p class="mt-5 mb-3 text-muted text-center">&copy; Principal 2018</p>
+    </form>
+  </body>
+</html>

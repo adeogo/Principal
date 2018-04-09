@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+     <link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
+      <link rel="stylesheet" type="text/css" href="css/form.css">
+	<title>Principal | Sign up</title>
+</head>
+<body class="body">
+
+	<form class="form-signup px-5 pb-5" action="formScript/signUp.php" method="POST" id="signupForm">
+		<h2 class="text-center mb-3 mb-sm-1 mb-md-1">Sign up</h2>
+
+    <fieldset>
+    <legend>School Details :</legend>
+    <div class="label-group">
+    <input type="text" placeholder="Enter School name" class="form-control" id="inputName" required autofocus name="schoolName">
+    <label for="inputName">School name</label>
+    </div>
+    <div class="label-group">
+    	<input type="email" placeholder="Enter School Email" class="form-control" id="inputEmail" required name="schoolEmail">
+    	<label for="inputEmail">Email</label>
+    </div>
+  </fieldset>
+
+ <fieldset>
+    <legend>School Location :</legend>
+    <div class="label-group">
+    <input type="text" placeholder="Enter School Adress" class="form-control" id="inputAddress" required name="schoolAddress">
+    <label for="inputAddress">School Adress</label>
+    </div>
+    <div class="label-group">
+    	<input type="text" placeholder="Enter State" class="form-control-md float-left float-l" id="inputState" required name="schoolState">
+    	<label for="inputState" >State</label>
+    </div>
+      <div class="float">
+       <select class="form-control select" name="schoolCountry">
+           <option>Nigeria</option>
+           <option>DR Congo</option>
+           <option>Togo</option>
+           <option>Mali</option>
+           <option>South africa</option>
+       </select>
+    </div>
+  </fieldset>
+
+  <fieldset>
+     <legend>Security :</legend>
+    <div class="label-group">
+    <input type="password" placeholder="Enter password" class="form-control" id="inputPassword" required name="schoolPassword">
+    <label for="inputPassword">Password</label>
+    </div>
+ <div class="label-group">
+    <input type="password" placeholder="Confirm password" class="form-control" id="inputConfirm" required name="schoolPassword2">
+    <label for="inputConfirm">Confirm Password</label>
+    </div>
+  </fieldset>
+	
+
+	<button type="submit" class="btn btn-block btn-lg btn-outline-primary mt-3 mt-md-1 mb-sm-1" name="signupBtn">Sign up</button>
+	</form>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
