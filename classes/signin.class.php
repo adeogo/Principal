@@ -18,6 +18,7 @@ class signin extends database {
 				$query = mysqli_query($this->conn, $checkQuery);
 
 				while($rows = mysqli_fetch_array($query)){
+					$dbId = $rows['id'];
 					$dbEmail = $rows['email'];
 					$dbPass = $rows['password'];
 				}
@@ -26,10 +27,10 @@ class signin extends database {
 					if($inputPassword == $dbPass){
 						if($remember == "on"){
 							$exp = time()+604800;
-							setcookie("principal", md5($inputEmail), $exp, '/');
+							setcookie("principal", md5($dbId), $exp, '/');
 							header("Location: ../dashboard.php");
 						}else{
-							$_SESSION['principal'] = md5($inputEmail);
+							$_SESSION['principal'] = md5($dbId);
 							header("Location: ../dashboard.php");
 						}
 					}else{
